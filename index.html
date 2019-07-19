@@ -23,14 +23,15 @@
             </div>
         </div>
         <div class="box">
-            <form>
+            <div class="styles">
+                   
                 <table>
                     <tr>
                         <td>
                             Day of birth:
                         </td>
                         <td>
-                            <input type="text" placeholder="DD" name="day" required>
+                            <input id="day" type="text" placeholder="DD" name="day" required>
                         </td>
                     </tr>
                     <tr>
@@ -38,7 +39,7 @@
                             Month of birth:
                         </td>
                         <td>
-                            <input type="text" placeholder="MM" name="month" required>
+                            <input id="month" type="text" placeholder="MM" name="month" required>
                         </td>
                     </tr>
                     <tr>
@@ -46,25 +47,26 @@
                             Year of birth:
                         </td>
                         <td>
-                            <input type="text" placeholder="YYYY" name="year" required>
+                            <input id="year" type="text" placeholder="YYYY" name="year" required>
                         </td>
                     </tr>
                     <tr>
                         <td>
                             Gender :
                         </td>
-                        <td id="gender">
-                            <input type="radio" name="Gender">Male
-                            <input type="radio" name="Gender">Female
+                        <td >
+                            <input id="gender" type="radio" name="Gender">Male
+                            <input id="gender" type="radio" name="Gender">Female
                         </td>
                     </tr>
                     <tr>
                         <td id="submit">
-                            <input type="button" onclick="akanNames()" value="calculate" name="Submit">
+                            <!-- <input type="button" onclick="akanNames()" value="Submit" name="Submit"> -->
+                            <button onclick="akanNames()">calculate</button>
                         </td>
                     </tr>
                 </table>
-            </form>
+            </div>
             <p id="result"></p>
             <p id="akan"></p>
         </div>
