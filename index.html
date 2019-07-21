@@ -7,7 +7,7 @@
     <title>Akan Names</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css"> 
-    <script src="css/script.js"></script>
+    <script src="js/script.js"></script>
 </head>
 <body>
     <div class="container">
@@ -54,21 +54,20 @@
                         <td>
                             Gender :
                         </td>
-                        <td >
-                            <input id="gender" type="radio" name="Gender">Male
-                            <input id="gender" type="radio" name="Gender">Female
+                        <td id="gender">
+                            <input type="radio" name="Gender">Male
+                            <input type="radio" name="Gender">Female
                         </td>
                     </tr>
                     <tr>
                         <td id="submit">
-                            <!-- <input type="button" onclick="akanNames()" value="Submit" name="Submit"> -->
                             <button onclick="akanNames()">calculate</button>
                         </td>
-                    </tr>
-                </table>
-            </div>
-            <p id="output">Hello world</p>
-            <p id="name"></p>
+                    </tr> 
+                </table><br>
+                <p id="output"></p>
+                <em>Your akan name is</em>:<strong><p id="name"></p></strong>
+            </div> 
         </div>
     </div> 
 </body>
