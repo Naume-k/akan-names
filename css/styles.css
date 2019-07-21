@@ -10,13 +10,11 @@ h1{
     border-radius: 20px;
     border: 1px #b0b0b0 solid;
     box-shadow: 8px 8px 15px #b0b0b0;
-    margin-bottom: 20px;
     margin-left: 25%;
     margin-top: 5%;
 }
 h2{
     text-align: center;
-    
 }
 body{
     background-image: url("https://static.independent.co.uk/s3fs-public/thumbnails/image/2018/04/09/20/istock-157528129.jpg?w968h681");
@@ -30,3 +28,9 @@ body{
 /* p{
     color: rgb(255, 255, 255);
 } */
+#output{
+    color: white;
+}
+#name{
+    color:white;
+}
