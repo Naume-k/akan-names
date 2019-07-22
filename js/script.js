@@ -4,8 +4,8 @@ function akanNames(){
     var year=parseFloat(document.getElementById("years").value);
     var CC=(year-1)/100+1;
     var day = ( ( (CC/4) -2*CC-1) + ((5*year/4) ) + ((26*(month+1)/10)) + date )%7;
-
-    document.getElementById('output').innerHTML = Math.round(day);
+    var weekDays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    document.getElementById('output').innerHTML =weekDays[ Math.round(day)];
 
     // var day = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
     // var theDay = day[date.getDay()];
@@ -13,13 +13,14 @@ function akanNames(){
 
     var male = ["kwasi","kwadwo","kwabena","kwaku","yaw","kofi","kwame"];
     var female = ["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"];
-    var gender = document.getElementById('gender').value;
 
-    if (year == "" && gender=="")
+    var gender = document.querySelector('input[name="Gender"]:checked').value;
+    console.log(gender);
+    if (year == "" || gender=="")
         {
         alert("Please fill the form");
         }
-    else if (month == "" && day=="")
+    else if (month == "" || day=="")
         {
         alert("Please fill the boxes");
         }
@@ -32,10 +33,10 @@ function akanNames(){
     else if (gender === "female") {
         document.getElementById('name').innerHTML = female[Math.round(day)]; 
       }
-    else {
+    else if (gender === "male"){
         document.getElementById('name').innerHTML = male[Math.round(day)];
         }
-        // else{
-        //     alert(done);
-        // }
+    else{
+            alert(done);
+        }
 }
